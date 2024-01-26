@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <title>
+            Test Weather App
+        </title>
+        <link rel="stylesheet" href="test.css">
+    </head>
+    <body>
+        <div class="weatherbox">
+            <div class="search">
+                <input type="text" placeholder="Enter City" spellcheck="true">
+                <button id="mybutton">
+                    <img src="test icones/weather/search.png" >
+                </button>
+            </div>
+            <div class="error">
+                <p>Invalid City Name</p>
+            </div>
+            <div class="climate">
+                <img src="test icones/weather/cloudy.png"class="weathericon">
+                <h1 class="temp">40°c</h1>
+                <h2 class="city">Arizona</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="test icones/weather/humid.png">
+                        <div>
+                            <p class="humidity"> 52%</p>
+                            <p>Humidity</p>
+                        </div>
+                        <div class="col">
+                            <img src="test icones/weather/wind.png">
+                            <div>
+                                <p class="wind"> 2 mph</p>
+                                <p>Wind Speed</p>
+                            </div>
+                        </div>        
+                    </div> 
+                </div>               
+                <div class="detail2">
+                        <div class="row">
+                            <img src="/test icones/weather/thermometercon.png">
+                            <div>
+                                <p class="feelslike"> 
+                                    17.95</p>
+                                <p>feels_like</p>
+                            </div>
+                        <div class="row">
+                                <img src="/test icones/weather/pressure.png">
+                                <div>
+                                    <p class="pressure">1027</p>
+                                    <p>pressure</p>                                    
+                                </div>
+                        </div>
+                        </div>
+                </div>
+            </div>    
+        <script src="./test.js">
+        //     const apiKey="9024918f09bda0a96688f86a2b5e3d25";
+        //     const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+        //     const searchBox=document.querySelector(".search input");
+        //     const searchButton=document.querySelector(".search button");
+        //     const myButton=document.getElementById("mybutton");
+        //     const weatherIcon=document.querySelector(".weathericon");
+
+        //     async function testWeather(city){
+        //         const response = await fetch(apiUrl+city+`&appid=${apiKey}`);
+        //         if(response.status==404){
+        //             document.querySelector(".error").style.display="block";
+
+        //             document.querySelector(".climate").style.display="none";
+        //         }
+        //         else{
+        //             let data = await response.json();
+        //         console.log(data);
+
+        //         document.querySelector(".city").innerHTML=data.name;
+        //         document.querySelector(".temp").innerHTML=Math.round(data.main.temp)+"°c";
+        //         document.querySelector(".humidity").innerHTML=data.main.humidity+"%";
+        //         document.querySelector(".wind").innerHTML=data.wind.speed+"mph";
+        //         document.querySelector(".feelslike").innerHTML=Math.round(data.main.feels_like)+"°c";
+        //         document.querySelector(".pressure").innerHTML=data.main.pressure;
+                 
+                
+        //         if(data.weather[0].main=="Clouds"){
+        //             weatherIcon.src="test icones/weather/cloudy.png";
+        //         }
+        //         else if(data.weather[0].main=="Clear"){
+        //             weatherIcon.src="test icones/weather/sunny.png";
+        //         }
+        //         else if(data.weather[0].main="Drizzle"){
+        //             weatherIcon.src="test icones/weather/rainy.png";
+        //         }
+        //         else if(data.weather[0].main="Rain"){
+        //             weatherIcon.src="test icones/weather/thunderstrom.png";
+        //         }
+        //         else if(data.weather[0].main="Mist"){
+        //             weatherIcon.src="test icones/weather/snowy.png.png";
+        //         }
+        //         document.querySelector(".climate").style.display="block";
+        //         document.querySelector(".error").style.display="none";
+
+        //         }
+                
+        //     }    
+        // searchButton.addEventListener("click",(e)=>{
+        //     testWeather(searchBox.value);
+        //     console.log(e)
+        //     })
+        
+        </script>
+    </body>
+</html>
+
